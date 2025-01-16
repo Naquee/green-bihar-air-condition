@@ -58,12 +58,14 @@ img {
 }
 
 .horizontal-move-text {
-  display: block;
+  font-weight: 500;
   font-size: 1.3rem;
   text-align: center;
   padding: 0.5rem;
-  letter-spacing: 1.1px;
-  font-weight: 500;
+}
+
+.fa-phone {
+  padding: 0 0.5rem;
 }
 
 .our-services-container {
@@ -178,7 +180,6 @@ img {
 
 .brand-wrapper {
   content: "";
-
 }
 
 .brand-title-cont {
@@ -202,7 +203,16 @@ img {
   height: auto;
   border-radius: 14px;
   /* border: 1px solid red; */
+}
 
+/* navbar logo  */
+.navbar-brand {
+  width: 120px;
+  height: auto;
+}
+
+.navbar-brand img {
+  border-radius: 7px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -214,6 +224,13 @@ img {
   .services-card {
     width: auto;
     min-height: 450px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .brand-logo {
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
   }
 }
 
@@ -234,12 +251,23 @@ img {
     gap: 0.8rem;
   }
 
-  .brand-logo {
-    display: grid;
-    grid-template-columns: repeat(3, 90px);
+  .brand-title-cont {
+    font-size: 1.5rem;
+    font-weight: 500;
   }
 
+  .gallery-container-title {
+    font-size: 1.5rem;
+  }
 
+  /* .brand-logo {
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+  } */
+
+  .scrolling-text-container {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1424px) {
