@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  /* font-size: 16px; */
 }
 
 *,
@@ -34,17 +33,8 @@ img {
   height: auto;
 }
 
-.main-landing-page-container {
-  /* border: 1px solid red;  */
-  content: "";
-}
-
-.main-landing-page-center {
-  /* border: 1px solid #000; */
-}
-
-.hero-container {
-  /* border: 1px solid #000; */
+.landing-page-center {
+  padding-top: 4.8rem;
 }
 
 .scrolling-text-container {
@@ -68,10 +58,6 @@ img {
   padding: 0 0.5rem;
 }
 
-.our-services-container {
-  /* border: 1px solid #000; */
-}
-
 .service-offer-container {
   display: flex;
   align-items: center;
@@ -88,10 +74,8 @@ img {
 .services-card {
   padding: 1.2rem;
   margin: 1rem;
-  /* border: 1px solid #000; */
   width: 340px;
   min-height: 500px;
-  /* height: 500px; */
   background: #eae8e8;
   border-radius: 12px;
   overflow: hidden;
@@ -105,13 +89,10 @@ img {
 }
 
 .card-img {
-  /* width: 100%;*/
   height: auto;
 }
 
 .ac-repair-img {
-  /* width: 300px;
-      height: auto; */
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -140,9 +121,7 @@ img {
 .card-btn {
   display: inline-block;
   padding: 10px 15px;
-  /* background: #007bff; */
   background-color: #363682;
-
   color: #fff;
   text-decoration: none;
   font-size: 0.9rem;
@@ -155,9 +134,6 @@ img {
   transform: scale(1.1);
 }
 
-.our-gallery-container {
-  /* border: 1px solid green; */
-}
 .gallery-container-title {
   font-size: 2rem;
   font-weight: 600;
@@ -167,7 +143,6 @@ img {
 
 .stock-gallery {
   padding: 1rem;
-  /* border: 1px solid red; */
   display: grid;
   grid-template-columns: repeat(3, auto);
   gap: 2rem;
@@ -181,13 +156,13 @@ img {
   box-shadow: 5px 3px 3px rgb(137, 133, 133);
 }
 
-.brand-show-container {
+/* .brand-show-container {
   content: "";
 }
 
 .brand-wrapper {
   content: "";
-}
+} */
 
 .brand-title-cont {
   font-size: 2rem;
@@ -197,7 +172,6 @@ img {
 }
 
 .brand-logo {
-  /* border: 1px solid #000; */
   padding: 0.2rem;
   display: flex;
   align-items: center;
@@ -209,12 +183,10 @@ img {
   width: 110px;
   height: auto;
   border-radius: 14px;
-  /* border: 1px solid red; */
 }
 
-/* navbar logo  */
 .navbar-brand {
-  width: 120px;
+  width: 160px;
   height: auto;
 }
 
@@ -223,7 +195,6 @@ img {
 }
 
 .landing-page-about-us {
-  /* border: 1px solid #000; */
   margin: 1rem;
   padding: 1rem;
 }
@@ -241,14 +212,11 @@ img {
 }
 
 .l-p-about-text {
-  /* border: 1px solid #000; */
   width: 70%;
 }
 
 .aboutus-know-more-btn {
   margin-top: 1.5rem;
-  /* padding-top: 1rem; */
-  /* border: 1px solid #000; */
 }
 
 .know-more-cta {
@@ -280,10 +248,8 @@ img {
 
 .whatsapp-chat-feature {
   display: block;
-  /* border: 1px solid red; */
   width: 100%;
   height: auto;
-  /* position: relative; */
   text-align: right;
 }
 
@@ -292,7 +258,6 @@ img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  /* position: absolute; */
   right: 1rem;
   bottom: 14rem;
   right: 0.5rem;
@@ -307,9 +272,6 @@ img {
 
 .implement-map {
   margin: 1rem 0;
-  /* border: 1px solid #ffffff; */
-    /* width: 350px;
-    height: 200px; */
 }
 
 @keyframes bounce {
@@ -322,11 +284,7 @@ img {
   }
 }
 
-  /* .whatsapp-logo:hover {
-    transform: rotate(360deg) scale(1.2);
-    opacity: 0.8;
-  } */
-
+ 
 .top-page-wrapper {
   display: flex;
   align-items: center;
@@ -334,7 +292,6 @@ img {
   padding: 0.3rem 3rem;
   background: rgb(255, 255, 255);
   background-color: #363682;
-  /* border: 2px solid red; */
 }
 
 .top-page-wrapper span {
@@ -343,28 +300,62 @@ img {
   font-family: 'Poppins';
   color: white;
 }
-/* boot strap css  */
+
 .nav-item {
-  /* border: 1px solid #ffffff; */
   padding-left: 1.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 #enq-btn-navbar {
   margin: 0 2rem;
   border-radius: 4px;
   padding: 10px 20px;
-  /* background-color: #363682; */
   background: white;
   font-weight: 600;
-  /* color: black; */
-
-
 }
 
 #enq-btn-navbar:hover {
   transform: scale(1.1); 
+}
+
+#credintal {
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-family: 'Lucida Sans',sans-serif;
+  margin: 1rem;
+  color: white;
+}
+
+#credintal:hover {
+  color: blue;
+}
+
+#fixed-navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+
+.phone-icons {
+  padding: 0.5rem 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #eae8e8;
+  transition: all 0.4 ease;
+  cursor: pointer;
+}
+
+.phone-icons:hover {
+  transform: scale(1.1);
+}
+
+.phone-icons-links, .w-icons-links {
+  text-decoration: none;
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: black;
 }
 
 

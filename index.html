@@ -31,17 +31,17 @@
         font-family: "Roboto", sans-serif;
       }
       .text-hovar {
-        background-color: #000000; /* Default background color */
-        transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+        background-color: #000000;
+        transition: background-color 0.3s ease;
       }
 
       .text-hovar:hover {
-        background-color: #888580; /* Light gray color on hover */
+        background-color: #888580;
         border-radius: 5px;
       }
 
       .navbar {
-        transition: color 0.3s ease; /* Optional: Add transition to navbar */
+        transition: color 0.3s ease;
       }
       .padding-class {
         padding-left: 20px;
@@ -67,20 +67,15 @@
     </style>
   </head>
   <body>
-    <div class="top-page-wrapper">
-      <span class="top-page-contact"><i class="fa fa-phone"></i>7977359210</span>
-      <span class="top-page-address">
-        <i class="fa fa-map-marker"></i> Rehan Nagar Petrol Line, Phulwari
-        Sharif, Patna.</span
-      >
-    </div>
+    
     <nav
       class="navbar navbar-expand-lg text-white"
+      id="fixed-navbar"
       style="background-color: #000000"
     >
       <div class="container-fluid px-lg-5">
         <!-- Logo on the left -->
-        <a class="navbar-brand text-white" href="#">
+        <a class="navbar-brand text-white" href="./index.html">
           <img src="./stockimages/temp/logo1.png" alt="logo" />
         </a>
         <!-- Toggler for mobile view -->
@@ -136,7 +131,7 @@
             <li class="nav-item">
               <a
                 id="enq-btn-navbar"
-                class="nav-link active text-hovar padding-class "
+                class="nav-link active text-hovar padding-class"
                 aria-current="page"
                 href="./forms/index.html"
                 >Enquiry now</a
@@ -151,6 +146,15 @@
 
     <div class="main-landing-page-container">
       <div class="landing-page-center">
+        <div class="top-page-wrapper">
+          <span class="top-page-contact"
+            ><i class="fa fa-phone"></i>7977359210</span
+          >
+          <span class="top-page-address">
+            <i class="fa fa-map-marker"></i> Rehan Nagar Petrol Line, Phulwari
+            Sharif, Patna.</span
+          >
+        </div>  
         <div class="hero-container">
           <img
             src="./stockimages/banner/banner.png"
@@ -165,14 +169,8 @@
             /></a>
           </div>
         </div>
-        <!-- <div class="whatsapp-chat-feature">
-          <a href="https://wa.me/7484966981"><img src="./stockimages/brandLogo/whatsapp-logo.png" alt="whatsapp-logo" class="whatsapp-logo"></a>
-        </div> -->
         <div class="scrolling-text-container">
-          <p id="type-writer-effect" class="horizontal-move-text">
-            <!-- <span ></span> -->
-            <!-- <span><i class="fa fa-phone"> </i>797-735-9210</span> -->
-          </p>
+          <p id="type-writer-effect" class="horizontal-move-text"></p>
         </div>
         <section id="services">
           <div class="our-services-container">
@@ -260,14 +258,25 @@
                 </div>
                 <div class="card-content">
                   <h6 class="card-title">Emergency Services</h6>
-                  <p class="card-description">
-                    for any Emergency 24/7 support for urgent AC issues.
+                  <!-- <p class="card-description">
+                    Call 7977359210
                   </p>
+                  <p>
+                    whatsApp 7977359210
+                  </p> -->
+                  <a href="tel:7977359210" class="phone-icons-links"> 
+                    <img src="./stockimages/temp/phone.png" alt="phone" class="phone-icons">
+                    7977359210
+                  </a>
+                  <a href="https://wa.me/7977359210" class="w-icons-links">
+                    <img src="./stockimages/temp/whatsapp.png" alt="phone" class="phone-icons">
+                    7977359210  
+                  </a>
                   <a
                     href="./forms/index.html"
                     class="card-btn"
                     title="Book an AC repair service now"
-                    >Book now</a
+                    >Enquiry Now</a
                   >
                 </div>
               </div>
@@ -315,18 +324,11 @@
         <section class="our-gallery-container" id="gallery">
           <h4 class="gallery-container-title">Check out our Gallery</h4>
           <div class="stock-gallery">
-            <!-- <img src="./stockimages/gallery/g1.png" alt="" class="stock-gallery-item"> -->
-            <!-- <img src="./stockimages/gallery/g2.png" alt="" class="stock-gallery-item"> -->
             <img
               src="./stockimages/visitcard (1).jpg"
               alt=""
               class="stock-gallery-item"
             />
-            <!-- <img
-              src="./stockimages/gallery/g3.png"
-              alt=""
-              class="stock-gallery-item"
-            /> -->
             <img
               src="./stockimages/gallery/g4.png"
               alt=""
@@ -337,8 +339,6 @@
               alt=""
               class="stock-gallery-item"
             />
-            <!-- <img src="./stockimages/gallery/g6.png" alt="" class="stock-gallery-item"> -->
-            <!-- <img src="./stockimages/gallery/g7.png" alt="" class="stock-gallery-item"> -->
             <img
               src="./stockimages/gallery/g8.png"
               alt=""
@@ -354,7 +354,6 @@
               alt=""
               class="stock-gallery-item"
             />
-            <!-- <img src="./stockimages/gallery/g11.png" alt="" class="stock-gallery-item"> -->
             <img
               src="./stockimages/gallery/g12.png"
               alt=""
@@ -393,25 +392,16 @@
         </div>
       </div>
     </div>
-    <!-- landing-page-end  -->
-
     <!-- --------------------------------------------------------------Footer ------------------------------------------------------>
     <footer
       class="text-center text-white"
       style="background-color: #000000; margin-top: 1rem"
     >
-      <!-- Grid container -->
       <div class="container p-4">
         <!-- Section: Social media -->
         <section class="mb-4">
           <!-- Facebook -->
         </section>
-        <!-- Section: Social media -->
-        <!-- Section: Form -->
-
-        <!-- Section: Text -->
-
-        <!-- Section: Links -->
         <section class="">
           <!--Grid row-->
           <div class="row">
@@ -426,7 +416,15 @@
                 conditioning units, ensuring optimal comfort in any space.
               </p>
               <div class="implement-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57586.6853128143!2d85.0372915522512!3d25.56608248728252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2a82091e88743%3A0x349f17b901057f!2sIndianOil!5e0!3m2!1sen!2sin!4v1737145015571!5m2!1sen!2sin" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57586.6853128143!2d85.0372915522512!3d25.56608248728252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2a82091e88743%3A0x349f17b901057f!2sIndianOil!5e0!3m2!1sen!2sin!4v1737145015571!5m2!1sen!2sin"
+                  width="400"
+                  height="200"
+                  style="border-radius: 10px"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
             <!--Grid column-->
@@ -437,52 +435,40 @@
                 <li class="row mt-2">
                   <a
                     class="text-white text-decoration-none text-hovar col-12"
-                    href="#!"
+                    href="#"
                     >Home</a
                   >
                 </li>
                 <li class="row mt-2">
                   <a
                     class="text-white text-decoration-none text-hovar col-12"
-                    href="#!"
+                    href="#about"
                     >About US</a
                   >
                 </li>
                 <li class="row mt-2">
                   <a
                     class="text-white text-decoration-none text-hovar col-12"
-                    href="#!"
+                    href="#services"
                     >Services</a
                   >
                 </li>
                 <li class="row mt-2">
                   <a
                     class="text-white text-decoration-none text-hovar col-12"
-                    href="#!"
+                    href="#gallery"
                     >Gallery</a
                   >
                 </li>
-                <!-- <li class="row mt-2">
-                  <a
-                    class="text-white text-decoration-none text-hovar col-12"
-                    href="#!"
-                    >Career</a
-                  >
-                </li> -->
               </ul>
             </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
             <div class="col-lg-4 col-md-6 mb-4 mb-md-0 text-start">
               <h5 class="text-uppercase">Get In Touch</h5>
 
               <div class="container">
                 <div class="contact-card text-center">
                   <div class="contact-item">
-                    <span class="d-flex p-1"
-                      >
-                      
+                    <span class="d-flex p-1">
                       <i class="fa-sharp fa-solid fa-location-dot mt-1"></i>
                       <p class="text-start">
                         Rehan Nagar Petrol Line, Phulwari Sharif, Patna.
@@ -508,9 +494,6 @@
                 </div>
               </div>
             </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
             <div class="col-lg-2 col-md-12 mb-4 mb-md-0 text-start">
               <h5 class="text-uppercase">SOCIAL MEDIA</h5>
               <ul
@@ -527,31 +510,6 @@
                     <i class="fa-brands fa-facebook-f"></i>
                   </a>
                 </li>
-
-                <!-- WhatsApp -->
-                <!-- <li class="me-2 me-lg-0 mb-0 mb-lg-2">
-                  <a
-                    class="rounded-circle d-flex justify-content-center align-items-center bg-white text-decoration-none"
-                    style="width: 50px; height: 50px"
-                    href="#!"
-                    role="button"
-                  >
-                    <i class="fa-brands fa-whatsapp"></i>
-                  </a>
-                </li> -->
-
-                <!-- Google -->
-                <!-- <li class="me-2 me-lg-0 mb-0 mb-lg-2">
-                  <a
-                    class="rounded-circle d-flex justify-content-center align-items-center bg-white text-decoration-none"
-                    style="width: 50px; height: 50px"
-                    href="#!"
-                    role="button"
-                  >
-                    <i class="fab fa-google"></i>
-                  </a>
-                </li> -->
-
                 <!-- Instagram -->
                 <li class="me-2 me-lg-0 mb-0 mb-lg-2">
                   <a
@@ -563,7 +521,6 @@
                     <i class="fab fa-instagram"></i>
                   </a>
                 </li>
-
                 <!-- LinkedIn -->
                 <li>
                   <a
@@ -578,20 +535,13 @@
               </ul>
             </div>
           </div>
-          <!--Grid row-->
         </section>
-        <!-- Section: Links -->
       </div>
-      <!-- Grid container -->
-
-      <!-- Copyright -->
-      <div
-        class="text-center p-3"
-        style="background-color: rgba(0, 0, 0, 0.05)"
-      >
-        © 2020 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
-          >MDBootstrap.com</a
+      <div class="credintal-cont">
+        <a
+          href="https://sydamwebsolutions.com/"
+          id="credintal"
+          > Powerd Sydam web solutions</a
         >
       </div>
       <!-- Copyright -->

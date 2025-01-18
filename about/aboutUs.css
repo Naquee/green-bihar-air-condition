@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  /* font-size: 16px; */
 }
 
 *,
@@ -35,15 +34,13 @@ img {
 }
 
 .about-us-container {
-  /* border: 1px solid #000; */
   padding: 0.5rem;
   background: linear-gradient(to bottom, #d6a5ed, #c3d5fa);
-
 }
 
 .about-us-center {
-  /* border: 1px solid #000; */
-  padding: 0.5rem;
+border: 3px solid red;
+padding-top: 4rem;
 }
 .about-headline {
   font-size: 6rem;
@@ -54,7 +51,6 @@ img {
 
 .about-us-center section {
   padding: 1rem;
-  /* border: 1px solid #000; */
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -63,7 +59,7 @@ img {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-/* hero  */
+
 .about-us {
   display: flex;
   align-items: center;
@@ -71,33 +67,16 @@ img {
   gap: 1rem;
 }
 
-
-.about-txt-wrap {
-  /* border: 1px solid #000; */
-}
-
-.about-img-cont {
-  /* border: 1px solid #000; */
-
-}
-
 .technician-photo {
   max-width: 300px;
-  /* height: auto;
-  display: block;
-  margin: 0 auto 1rem; */
-  border-radius:0% 100% 0% 100% / 70% 33% 67% 30%   ;
-
+  border-radius: 0% 100% 0% 100% / 70% 33% 67% 30%;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
+
 .technician-photo:hover {
   filter: brightness(1.1);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
-
-
-
 
 .about-txt-wrap p {
   font-size: 1.1rem;
@@ -123,16 +102,43 @@ img {
   font-family: "Trebuchet MS", "Lucida Sans Unicode";
 }
 
-
-
 .mark {
   font-weight: bold;
 }
 
+#enq-btn-navbar {
+  margin: 0 2rem;
+  border-radius: 4px;
+  padding: 10px 20px;
+  background: white;
+  font-weight: 600;
+}
 
+#enq-btn-navbar:hover {
+  transform: scale(1.1); 
+}
+
+.nav-item {
+  padding-left: 1.5rem;
+}
+
+.navbar-brand {
+  width: 160px;
+  height: auto;
+}
+
+.navbar-brand img {
+  border-radius: 6px;
+}
+
+#fixed-navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
 
 @media only screen and (max-width: 724px) {
-  .about-us  {
+  .about-us {
     display: block;
   }
   .about-img-cont {
@@ -140,11 +146,10 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-
   }
 
   .technician-photo {
-    border-radius:0% 100% 0% 100% / 70% 33% 67% 30%   ;
+    border-radius: 0% 100% 0% 100% / 70% 33% 67% 30%;
     max-width: auto;
   }
 

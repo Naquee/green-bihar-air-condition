@@ -5,56 +5,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>repair-knowmore</title>
     <link rel="stylesheet" href="../repair.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <title></title>
+    <style>
+      body {
+        /* margin-top: 55px; */
+        font-family: "Roboto", sans-serif;
+      }
+      .text-hovar {
+        background-color: #000000;
+        transition: background-color 0.3s ease;
+      }
+
+      .text-hovar:hover {
+        background-color: #888580;
+        border-radius: 5px;
+      }
+
+      .navbar {
+        transition: color 0.3s ease;
+      }
+      .padding-class {
+        padding-left: 20px;
+      }
+
+      .contact-card {
+        border-radius: 8px;
+        max-width: 400px;
+      }
+      .contact-item {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #a5a3a0;
+        border-radius: 2px;
+      }
+      .contact-item i {
+        font-size: 1.5rem;
+        margin-right: 10px;
+      }
+      .contact-item span {
+        word-wrap: break-word;
+      }
+    </style>
   </head>
   <body>
+    <nav
+    class="navbar navbar-expand-lg text-white"
+    id="fixed-navbar"
+    style="background-color: #000000"
+  >
+    <div class="container-fluid px-lg-5">
+      <!-- Logo on the left -->
+      <a class="navbar-brand text-white" href="../../index.html">
+        <img src="../../stockimages/temp/logo1.png" alt="logo" />
+      </a>
+      <!-- Toggler for mobile view -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="fas fa-bars text-white"></span>
+      </button>
+      <!-- Navigation links on the right -->
+      <div
+        class="collapse navbar-collapse justify-content-end d-lg-flex justify-content-lg-end gap-5"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav mb-2 mb-lg-0 mt-sm-4 mt-lg-0">
+          <li class="nav-item">
+            <a
+              class="nav-link active text-white text-hovar padding-class"
+              aria-current="page"
+              href="../../index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active text-white text-hovar padding-class"
+              aria-current="page"
+              href="../../index.html#about"
+              >About Us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active text-white text-hovar padding-class"
+              aria-current="page"
+              href="../../index.html#services"
+              >Services</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active text-white text-hovar padding-class"
+              aria-current="page"
+              href="../../index.html#gallery"
+              >Gallery</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              id="enq-btn-navbar"
+              class="nav-link active text-hovar padding-class"
+              aria-current="page"
+              href="./forms/index.html"
+              >Enquiry now</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
     <div class="know-container">
       <div class="knowmore-center">
         <div class="container-overview">
-            <div class="btn-and-title">
-                <h3 class="knowmore-title">AC Sales & Services</h3>
-                <a href="../../forms/index.html" class="enquiry-now">Enquiry Now</a>
-
-            </div>
+          <div class="btn-and-title">
+            <h3 class="knowmore-title">AC Sales & Services</h3>
+          </div>
           <p class="knowmore-overview">
-            At CoolAir Solutions, we offer a comprehensive range of air conditioning sales and services designed to meet all your cooling needs. Whether you’re looking to purchase a new air conditioner or maintain your existing system, our team of experts is here to provide you with exceptional service and quality products.
+            At CoolAir Solutions, we offer a comprehensive range of air
+            conditioning sales and services designed to meet all your cooling
+            needs. Whether you’re looking to purchase a new air conditioner or
+            maintain your existing system, our team of experts is here to
+            provide you with exceptional service and quality products.
           </p>
         </div>
         <div class="we-offer-cont">
           <p class="we-offer-text">Why Buy from Us?</p>
           <ul class="we-offer-list">
             <li>
-                Wide Range of Options: Choose from top brands like LG, Samsung, Daikin, and more.
-            </li>
-            <li>Expert Guidance: Our knowledgeable team will help you select the best AC based on your needs and budget.</li>
-            <li>
-                Competitive Pricing: Get the best value with affordable rates and special offers.
+              Wide Range of Options: Choose from top brands like LG, Samsung,
+              Daikin, and more.
             </li>
             <li>
-                Warranty Assurance: All products come with manufacturer warranties for peace of mind.
+              Expert Guidance: Our knowledgeable team will help you select the
+              best AC based on your needs and budget.
+            </li>
+            <li>
+              Competitive Pricing: Get the best value with affordable rates and
+              special offers.
+            </li>
+            <li>
+              Warranty Assurance: All products come with manufacturer warranties
+              for peace of mind.
             </li>
           </ul>
         </div>
-
-        <!-- <div class="issue-fix-why-us-cont">
-          <div class="issue-fix">
-            <p class="issue-title">Common Issues We Fix:</p>
-            <ul class="issue-fix-list">
-              <li>AC not cooling</li>
-              <li>Strange noises or odors</li>
-              <li>Water leakage</li>
-              <li>Faulty thermostats or wiring</li>
-            </ul>
-          </div>
-          <div class="why-choose-us">
-            <p class="issue-title">Why Choose Us for AC Repair?</p>
-            <ul class="issue-fix-list">
-              <li>Experienced technicians</li>
-              <li>Affordable pricing</li>
-              <li>Customer-focused approach</li>
-            </ul>
-          </div>
-        </div> -->
-
         <div class="see-some-work-gallery">
           <p class="work-galery-title">Work Gallery</p>
           <div class="galery-cont">
@@ -73,13 +198,166 @@
               alt="repairimg"
               class="repair-img"
             />
-            
           </div>
         </div>
         <div class="cta-btn-enquiry">
-            <p class="cta-title">Ready to restore your comfort?</p> <a href="../../forms/index.html" class="enquiry-now">Enquiry Now</a>
+          <p class="cta-title">Ready to restore your comfort?</p>
+          <a href="../../forms/index.html" class="enquiry-now">Enquiry Now</a>
         </div>
       </div>
     </div>
+    <footer
+      class="text-center text-white"
+      style="background-color: #000000; margin-top: 1rem"
+    >
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+        </section>
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0 text-start">
+              <h5 class="text-uppercase">ABOUT US</h5>
+
+              <p class="">
+                Green Bihar Air Conditioning Sales & Services specializes in
+                providing top-notch air conditioning solutions for residential
+                and commercial clients. Our services include the sale,
+                installation, and maintenance of a wide range of air
+                conditioning units, ensuring optimal comfort in any space.
+              </p>
+              <div class="implement-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57586.6853128143!2d85.0372915522512!3d25.56608248728252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2a82091e88743%3A0x349f17b901057f!2sIndianOil!5e0!3m2!1sen!2sin!4v1737145015571!5m2!1sen!2sin"
+                  width="200"
+                  height="200"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-start">
+              <h5 class="text-uppercase">Quick Links</h5>
+
+              <ul class="list-unstyled mb-0 mt-2">
+                <li class="row mt-2">
+                  <a
+                    class="text-white text-decoration-none text-hovar col-12"
+                    href="#!"
+                    >Home</a
+                  >
+                </li>
+                <li class="row mt-2">
+                  <a
+                    class="text-white text-decoration-none text-hovar col-12"
+                    href="#!"
+                    >About US</a
+                  >
+                </li>
+                <li class="row mt-2">
+                  <a
+                    class="text-white text-decoration-none text-hovar col-12"
+                    href="#!"
+                    >Services</a
+                  >
+                </li>
+                <li class="row mt-2">
+                  <a
+                    class="text-white text-decoration-none text-hovar col-12"
+                    href="#!"
+                    >Gallery</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0 text-start">
+              <h5 class="text-uppercase">Get In Touch</h5>
+
+              <div class="container">
+                <div class="contact-card text-center">
+                  <div class="contact-item">
+                    <span class="d-flex p-1">
+                      <i class="fa-sharp fa-solid fa-location-dot mt-1"></i>
+                      <p class="text-start">
+                        Rehan Nagar Petrol Line, Phulwari Sharif, Patna.
+                      </p></span
+                    >
+                  </div>
+                  <div class="contact-item py-3">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>gbairconditioning24@gmail.com</span>
+                  </div>
+                  <div class="contact-item py-3">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>g.iqwal3697@gmail.com</span>
+                  </div>
+                  <div class="contact-item py-3">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>797 735 9210</span>
+                  </div>
+                  <div class="contact-item py-3">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>870 900 0721</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-12 mb-4 mb-md-0 text-start">
+              <h5 class="text-uppercase">SOCIAL MEDIA</h5>
+              <ul
+                class="list-unstyled mb-0 d-flex flex-row flex-lg-column justify-content-start align-items-center"
+              >
+                <!-- Facebook -->
+                <li class="me-2 me-lg-0 mb-0 mb-lg-2">
+                  <a
+                    class="rounded-circle d-flex justify-content-center align-items-center bg-white text-decoration-none"
+                    style="width: 50px; height: 50px"
+                    href="#!"
+                    role="button"
+                  >
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <!-- Instagram -->
+                <li class="me-2 me-lg-0 mb-0 mb-lg-2">
+                  <a
+                    class="rounded-circle d-flex justify-content-center align-items-center bg-white text-decoration-none"
+                    style="width: 50px; height: 50px"
+                    href="#!"
+                    role="button"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <!-- LinkedIn -->
+                <li>
+                  <a
+                    class="rounded-circle d-flex justify-content-center align-items-center bg-white text-decoration-none"
+                    style="width: 50px; height: 50px"
+                    href="#!"
+                    role="button"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="credintal-cont">
+        <a
+          href="https://sydamwebsolutions.com/"
+          id="credintal"
+          > Powerd Sydam web solutions</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
   </body>
 </html>
