@@ -1,0 +1,257 @@
+html {
+  box-sizing: border-box;
+  /* font-size: 16px; */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.know-container {
+  /* border: 1px solid #000; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: #8a87f3; */
+  /* background-color: #c9c9c9; */
+  background: linear-gradient(to bottom, #d6a5ed, #c3d5fa);
+
+
+}
+
+.knowmore-center {
+  /* border: 1px solid #000; */
+  /* width: 90%; */
+  margin: auto;
+  max-width: 1400px;
+  padding: 0 1.5rem;
+
+}
+
+.knowmore-title {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.knowmore-overview {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+.we-offer-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
+}
+
+.we-offer-list {
+  padding: 0.2rem 0.2rem 0.2rem 2rem;
+}
+
+.we-offer-list li {
+  padding: 0.2rem;
+  font-size: 1.11rem;
+}
+
+
+.we-offer-cont {
+  /* border: 1px solid #000; */
+}
+
+.issue-fix-why-us-cont {
+  /* border: 1px solid #000; */
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  gap: 1.5rem;
+}
+.why-choose-us {
+  /* border: 1px solid #000; */
+  width: 50%;
+}
+
+.issue-fix {
+  width: 50%;
+}
+
+.issue-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
+}
+
+.issue-fix-list {
+  /* border: 1px solid #000; */
+}
+
+.issue-fix-list li {
+  padding: 0.1rem 0.2rem 0.1rem 2rem;
+  font-size: 1.11rem;
+  /* text-decoration: dotted;  */
+}
+
+.work-galery-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 0.5rem;
+}
+
+
+
+.see-some-work-gallery {
+  /* border: 1px solid #000; */
+}
+
+.galery-cont {
+  padding: 1rem;
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.repair-img {
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 5px 3px 3px rgb(137, 133, 133);
+}
+
+
+
+.cta-btn-enquiry {
+  margin: 1rem 0;
+  border: 1px solid grey;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: cadetblue;
+}
+
+.cta-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.enquiry-now {
+  padding: 12px 22px;
+  border: 1px solid grey;
+  text-decoration: none;
+  border-radius: 2px;
+  background: #000;
+  transition: all 0.3s ease;
+  /* color: rgb(193, 56, 56); */
+  color: white;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  white-space: nowrap;
+  /* overflow: hidden; */
+}
+
+.enquiry-now:hover {
+  /* background-color: #0056b3; */
+  transform: scale(1.1); /* Increases the size by 10% */
+}
+
+.btn-and-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.container-overview,
+.we-offer-cont,
+.issue-fix-why-us-cont {
+  padding: 1rem 0;
+}
+
+
+@media only screen and (max-width: 624px) {
+  .galery-cont {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .repair-img  {
+    width: 80%;
+    margin: auto;
+  }
+  
+
+  .knowmore-title {
+    font-size: 1.3rem ;
+  }
+  .enquiry-now {
+    /* padding: 0.5rem 12px; */
+    font-weight: normal;
+    font-size: 1rem;
+
+  }
+  .knowmore-overview {
+    font-size: 1.1rem;
+  }
+
+  .knowmore-center {
+    padding: 0.8rem;
+  }
+
+  .we-offer-list {
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+  }
+
+  .issue-fix-why-us-cont {
+    display: block;
+  }
+
+  .why-choose-us,.issue-fix {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .issue-fix-list li {
+    padding: 0.1rem 0.2rem 0.1rem 0.2rem;
+  }
+  .cta-btn-enquiry {
+    padding: 0.5rem;
+  }
+
+  .cta-title  {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+}
