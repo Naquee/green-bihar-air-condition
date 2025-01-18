@@ -27,7 +27,7 @@
     <title></title>
     <style>
       body {
-        margin-top: 55px;
+        /* margin-top: 55px; */
         font-family: "Roboto", sans-serif;
       }
       .text-hovar {
@@ -67,52 +67,84 @@
     </style>
   </head>
   <body>
+    <div class="top-page-wrapper">
+      <span class="top-page-contact"><i class="fa fa-phone"></i>7977359210</span>
+      <span class="top-page-address">
+        <i class="fa fa-map-marker"></i> Rehan Nagar Petrol Line, Phulwari
+        Sharif, Patna.</span
+      >
+    </div>
     <nav
-      class="navbar navbar-expand-lg text-white fixed-top"
+      class="navbar navbar-expand-lg text-white"
       style="background-color: #000000"
     >
-    <div class="container-fluid px-lg-5">
-      <!-- Logo on the left -->
-      <a class="navbar-brand text-white" href="#">
-        <img src="./stockimages/temp/logo1.png" alt="" />
-      </a>
-      <!-- Toggler for mobile view -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="fas fa-bars text-white"></span>
-      </button>
-      <!-- Navigation links on the right -->
-      <div
-        class="collapse navbar-collapse justify-content-end d-lg-flex justify-content-lg-end gap-5"
-        id="navbarSupportedContent"
-      >
-      <ul class="navbar-nav mb-2 mb-lg-0 mt-sm-4 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active text-white text-hovar padding-class" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-white text-hovar padding-class" aria-current="page" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-white text-hovar padding-class" aria-current="page" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-white text-hovar padding-class" aria-current="page" href="#">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-white text-hovar padding-class" aria-current="page" href="#">Contact Us</a>
-          </li>
-        </ul>
+      <div class="container-fluid px-lg-5">
+        <!-- Logo on the left -->
+        <a class="navbar-brand text-white" href="#">
+          <img src="./stockimages/temp/logo1.png" alt="logo" />
+        </a>
+        <!-- Toggler for mobile view -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="fas fa-bars text-white"></span>
+        </button>
+        <!-- Navigation links on the right -->
+        <div
+          class="collapse navbar-collapse justify-content-end d-lg-flex justify-content-lg-end gap-5"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0 mt-sm-4 mt-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white text-hovar padding-class"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white text-hovar padding-class"
+                aria-current="page"
+                href="#about"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white text-hovar padding-class"
+                aria-current="page"
+                href="#services"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white text-hovar padding-class"
+                aria-current="page"
+                href="#gallery"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                id="enq-btn-navbar"
+                class="nav-link active text-hovar padding-class "
+                aria-current="page"
+                href="./forms/index.html"
+                >Enquiry now</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    
     </nav>
 
     <!-- landing-page-start  -->
@@ -124,7 +156,18 @@
             src="./stockimages/banner/banner.png"
             alt="Banner for Green Bihar Air Conditioning"
           />
+          <div class="whatsapp-chat-feature">
+            <a href="https://wa.me/7977359210"
+              ><img
+                src="./stockimages/brandLogo/whatsapp-logo.png"
+                alt="whatsapp-logo"
+                class="whatsapp-logo"
+            /></a>
+          </div>
         </div>
+        <!-- <div class="whatsapp-chat-feature">
+          <a href="https://wa.me/7484966981"><img src="./stockimages/brandLogo/whatsapp-logo.png" alt="whatsapp-logo" class="whatsapp-logo"></a>
+        </div> -->
         <div class="scrolling-text-container">
           <p id="type-writer-effect" class="horizontal-move-text">
             <!-- <span ></span> -->
@@ -132,105 +175,105 @@
           </p>
         </div>
         <section id="services">
-        <div class="our-services-container">
-          <div class="services-container-title">
-            <h4 class="services-title">Our Services</h4>
+          <div class="our-services-container">
+            <div class="services-container-title">
+              <h4 class="services-title">Our Services</h4>
+            </div>
+            <div class="service-offer-container">
+              <!-- card-one  -->
+              <div class="services-card">
+                <div class="card-img">
+                  <img
+                    src="./stockimages/serviceImg/s3.png"
+                    alt="Image of AC repair services"
+                    class="ac-repair-img"
+                  />
+                </div>
+                <div class="card-content">
+                  <h6 class="card-title">AC Repair</h6>
+                  <p class="card-description">
+                    Quick and efficient repairs to get your system running
+                    smoothly.
+                  </p>
+                  <a
+                    href="./knowmore/repair/repair.html"
+                    class="card-btn"
+                    title="Book an AC repair service now"
+                    >Know More</a
+                  >
+                </div>
+              </div>
+              <!-- card-two  -->
+              <div class="services-card">
+                <div class="card-img">
+                  <img
+                    src="./stockimages/serviceImg/ac-install.jpg"
+                    alt="Image of AC repair services"
+                    class="ac-repair-img"
+                  />
+                </div>
+                <div class="card-content">
+                  <h6 class="card-title">AC Installation & Maintenance</h6>
+                  <p class="card-description">
+                    Expert installation services tailored to your specific
+                    needs.
+                  </p>
+                  <a
+                    href="./knowmore/mntnance/mntnce.html"
+                    class="card-btn"
+                    title="Book an AC repair service now"
+                    >Know more</a
+                  >
+                </div>
+              </div>
+              <!-- card-three  -->
+              <div class="services-card">
+                <div class="card-img">
+                  <img
+                    src="./stockimages/serviceImg/s1.png"
+                    alt="Image of AC repair services"
+                    class="ac-repair-img"
+                  />
+                </div>
+                <div class="card-content">
+                  <h6 class="card-title">AC Sales & Services</h6>
+                  <p class="card-description">
+                    Quick and efficient repairs to get your system running
+                    smoothly.
+                  </p>
+                  <a
+                    href="./knowmore/sales/sales.html"
+                    class="card-btn"
+                    title="Book an AC repair service now"
+                    >Know more</a
+                  >
+                </div>
+              </div>
+              <!-- card-four  -->
+              <div class="services-card">
+                <div class="card-img">
+                  <img
+                    src="./stockimages/serviceImg/24-hour-7.jpg"
+                    alt="Image of AC repair services"
+                    class="ac-repair-img"
+                  />
+                </div>
+                <div class="card-content">
+                  <h6 class="card-title">Emergency Services</h6>
+                  <p class="card-description">
+                    for any Emergency 24/7 support for urgent AC issues.
+                  </p>
+                  <a
+                    href="./forms/index.html"
+                    class="card-btn"
+                    title="Book an AC repair service now"
+                    >Book now</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="service-offer-container">
-            <!-- card-one  -->
-            <div class="services-card">
-              <div class="card-img">
-                <img
-                  src="./stockimages/serviceImg/s3.png"
-                  alt="Image of AC repair services"
-                  class="ac-repair-img"
-                />
-              </div>
-              <div class="card-content">
-                <h6 class="card-title">AC Repair</h6>
-                <p class="card-description">
-                  Quick and efficient repairs to get your system running
-                  smoothly.
-                </p>
-                <a
-                  href="./forms/index.html"
-                  class="card-btn"
-                  title="Book an AC repair service now"
-                  >Book now</a
-                >
-              </div>
-            </div>
-            <!-- card-two  -->
-            <div class="services-card">
-              <div class="card-img">
-                <img
-                  src="./stockimages/serviceImg/ac-install.jpg"
-                  alt="Image of AC repair services"
-                  class="ac-repair-img"
-                />
-              </div>
-              <div class="card-content">
-                <h6 class="card-title">AC Installation & Maintenance</h6>
-                <p class="card-description">
-                  Expert installation services tailored to your specific needs.
-                </p>
-                <a
-                  href="./forms/index.html"
-                  class="card-btn"
-                  title="Book an AC repair service now"
-                  >Book now</a
-                >
-              </div>
-            </div>
-            <!-- card-three  -->
-            <div class="services-card">
-              <div class="card-img">
-                <img
-                  src="./stockimages/serviceImg/s1.png"
-                  alt="Image of AC repair services"
-                  class="ac-repair-img"
-                />
-              </div>
-              <div class="card-content">
-                <h6 class="card-title">AC Sales & Services</h6>
-                <p class="card-description">
-                  Quick and efficient repairs to get your system running
-                  smoothly.
-                </p>
-                <a
-                  href="./forms/index.html"
-                  class="card-btn"
-                  title="Book an AC repair service now"
-                  >Book now</a
-                >
-              </div>
-            </div>
-            <!-- card-four  -->
-            <div class="services-card">
-              <div class="card-img">
-                <img
-                  src="./stockimages/serviceImg/24-hour-7.jpg"
-                  alt="Image of AC repair services"
-                  class="ac-repair-img"
-                />
-              </div>
-              <div class="card-content">
-                <h6 class="card-title">Emergency Services</h6>
-                <p class="card-description">
-                  for any Emergency 24/7 support for urgent AC issues.
-                </p>
-                <a
-                  href="./forms/index.html"
-                  class="card-btn"
-                  title="Book an AC repair service now"
-                  >Book now</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+        </section>
 
         <div class="brand-show-container">
           <div class="brand-wrapper">
@@ -269,16 +312,21 @@
             </div>
           </div>
         </div>
-        <div class="our-gallery-container">
+        <section class="our-gallery-container" id="gallery">
           <h4 class="gallery-container-title">Check out our Gallery</h4>
           <div class="stock-gallery">
             <!-- <img src="./stockimages/gallery/g1.png" alt="" class="stock-gallery-item"> -->
             <!-- <img src="./stockimages/gallery/g2.png" alt="" class="stock-gallery-item"> -->
             <img
-              src="./stockimages/gallery/g3.png"
+              src="./stockimages/visitcard (1).jpg"
               alt=""
               class="stock-gallery-item"
             />
+            <!-- <img
+              src="./stockimages/gallery/g3.png"
+              alt=""
+              class="stock-gallery-item"
+            /> -->
             <img
               src="./stockimages/gallery/g4.png"
               alt=""
@@ -318,6 +366,30 @@
               class="stock-gallery-item"
             />
           </div>
+        </section>
+        <div class="landing-page-about-us" id="about">
+          <div class="landing-page-about-us-wrapper">
+            <div class="l-p-about-text">
+              <p class="founder-word">About us.</p>
+              <p>
+                Hi, I'm Miftuar Rahman, a professional AC technician with a
+                passion for keeping homes and businesses comfortable. I
+                specialize in diagnosing, repairing, and maintaining HVAC
+                systems to ensure they work efficiently. With years of
+                experience, I take pride in delivering top-notch service and
+                reliable solutions for all cooling and heating needs. My goal is
+                always to provide exceptional results while building trust and
+                satisfaction with every client I serve. If you're looking for
+                someone dependable and skilled, I'm here to help!
+              </p>
+              <div class="aboutus-know-more-btn">
+                <a href="./about/about.html" class="know-more-cta">Know more</a>
+              </div>
+            </div>
+            <div class="l-p-about-img-cont">
+              <img src="./stockimages/person.jpg" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -353,6 +425,9 @@
                 installation, and maintenance of a wide range of air
                 conditioning units, ensuring optimal comfort in any space.
               </p>
+              <div class="implement-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57586.6853128143!2d85.0372915522512!3d25.56608248728252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2a82091e88743%3A0x349f17b901057f!2sIndianOil!5e0!3m2!1sen!2sin!4v1737145015571!5m2!1sen!2sin" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
             </div>
             <!--Grid column-->
             <div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-start">
@@ -384,16 +459,16 @@
                   <a
                     class="text-white text-decoration-none text-hovar col-12"
                     href="#!"
-                    >GAllery</a
+                    >Gallery</a
                   >
                 </li>
-                <li class="row mt-2">
+                <!-- <li class="row mt-2">
                   <a
                     class="text-white text-decoration-none text-hovar col-12"
                     href="#!"
                     >Career</a
                   >
-                </li>
+                </li> -->
               </ul>
             </div>
             <!--Grid column-->
@@ -406,7 +481,9 @@
                 <div class="contact-card text-center">
                   <div class="contact-item">
                     <span class="d-flex p-1"
-                      ><i class="fa-sharp fa-solid fa-location-dot mt-1"></i>
+                      >
+                      
+                      <i class="fa-sharp fa-solid fa-location-dot mt-1"></i>
                       <p class="text-start">
                         Rehan Nagar Petrol Line, Phulwari Sharif, Patna.
                       </p></span
@@ -452,7 +529,7 @@
                 </li>
 
                 <!-- WhatsApp -->
-                <li class="me-2 me-lg-0 mb-0 mb-lg-2">
+                <!-- <li class="me-2 me-lg-0 mb-0 mb-lg-2">
                   <a
                     class="rounded-circle d-flex justify-content-center align-items-center bg-white text-decoration-none"
                     style="width: 50px; height: 50px"
@@ -461,10 +538,10 @@
                   >
                     <i class="fa-brands fa-whatsapp"></i>
                   </a>
-                </li>
+                </li> -->
 
                 <!-- Google -->
-                <li class="me-2 me-lg-0 mb-0 mb-lg-2">
+                <!-- <li class="me-2 me-lg-0 mb-0 mb-lg-2">
                   <a
                     class="rounded-circle d-flex justify-content-center align-items-center bg-white text-decoration-none"
                     style="width: 50px; height: 50px"
@@ -473,7 +550,7 @@
                   >
                     <i class="fab fa-google"></i>
                   </a>
-                </li>
+                </li> -->
 
                 <!-- Instagram -->
                 <li class="me-2 me-lg-0 mb-0 mb-lg-2">

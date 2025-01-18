@@ -40,11 +40,11 @@ img {
 }
 
 .main-landing-page-center {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 
 .hero-container {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 
 .scrolling-text-container {
@@ -69,7 +69,7 @@ img {
 }
 
 .our-services-container {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 
 .service-offer-container {
@@ -88,7 +88,7 @@ img {
 .services-card {
   padding: 1.2rem;
   margin: 1rem;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   width: 340px;
   min-height: 500px;
   /* height: 500px; */
@@ -140,16 +140,23 @@ img {
 .card-btn {
   display: inline-block;
   padding: 10px 15px;
-  background: #007bff;
+  /* background: #007bff; */
+  background-color: #363682;
+
   color: #fff;
   text-decoration: none;
   font-size: 0.9rem;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.card-btn:hover  {
+  transform: scale(1.1);
 }
 
 .our-gallery-container {
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 .gallery-container-title {
   font-size: 2rem;
@@ -160,7 +167,7 @@ img {
 
 .stock-gallery {
   padding: 1rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: grid;
   grid-template-columns: repeat(3, auto);
   gap: 2rem;
@@ -190,7 +197,7 @@ img {
 }
 
 .brand-logo {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   padding: 0.2rem;
   display: flex;
   align-items: center;
@@ -215,6 +222,152 @@ img {
   border-radius: 7px;
 }
 
+.landing-page-about-us {
+  /* border: 1px solid #000; */
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.landing-page-about-us-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.founder-word {
+  font-size: 1.9rem;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.l-p-about-text {
+  /* border: 1px solid #000; */
+  width: 70%;
+}
+
+.aboutus-know-more-btn {
+  margin-top: 1.5rem;
+  /* padding-top: 1rem; */
+  /* border: 1px solid #000; */
+}
+
+.know-more-cta {
+  padding: 10px 20px;
+  border-radius: 4px;
+  background: #000;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+.know-more-cta:hover {
+  transform: scale(1.1);
+}
+
+.l-p-about-img-cont {
+  width: 400px;
+}
+
+.l-p-about-img-cont img {
+  border-radius: 0% 100% 0% 100% / 50% 33% 67% 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.whatsapp-chat-feature {
+  display: block;
+  /* border: 1px solid red; */
+  width: 100%;
+  height: auto;
+  /* position: relative; */
+  text-align: right;
+}
+
+.whatsapp-logo {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  /* position: absolute; */
+  right: 1rem;
+  bottom: 14rem;
+  right: 0.5rem;
+  bottom: 1.5rem;
+  transition: transform 0.5s, opacity 0.5s;
+  z-index: 1
+}
+
+.whatsapp-logo {
+  animation: bounce 2s infinite;
+}
+
+.implement-map {
+  margin: 1rem 0;
+  /* border: 1px solid #ffffff; */
+    /* width: 350px;
+    height: 200px; */
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% { 
+    transform: translateY(20px);
+  }
+}
+
+  /* .whatsapp-logo:hover {
+    transform: rotate(360deg) scale(1.2);
+    opacity: 0.8;
+  } */
+
+.top-page-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 3rem;
+  background: rgb(255, 255, 255);
+  background-color: #363682;
+  /* border: 2px solid red; */
+}
+
+.top-page-wrapper span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: 'Poppins';
+  color: white;
+}
+/* boot strap css  */
+.nav-item {
+  /* border: 1px solid #ffffff; */
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#enq-btn-navbar {
+  margin: 0 2rem;
+  border-radius: 4px;
+  padding: 10px 20px;
+  /* background-color: #363682; */
+  background: white;
+  font-weight: 600;
+  /* color: black; */
+
+
+}
+
+#enq-btn-navbar:hover {
+  transform: scale(1.1); 
+}
+
+
 @media only screen and (max-width: 1024px) {
   .service-offer-container {
     display: grid;
@@ -226,6 +379,8 @@ img {
     min-height: 450px;
   }
 }
+
+
 
 @media only screen and (max-width: 760px) {
   .brand-logo {
@@ -266,6 +421,22 @@ img {
   } */
 
   .scrolling-text-container {
+    display: none;
+  }
+  .landing-page-about-us-wrapper {
+    display: block;
+  }
+
+  .l-p-about-text {
+    width: auto;
+    padding: 1rem 0;
+  }
+  .l-p-about-img-cont {
+    width: auto;
+    padding: 1rem 0;
+  }
+
+  .top-page-wrapper {
     display: none;
   }
 }
