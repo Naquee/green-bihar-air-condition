@@ -50,7 +50,7 @@ body {
   max-width: 900px;
   width: 100%;
   background-color: #000;
-  border-radius: 15px;
+  border-radius: 9px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -93,13 +93,18 @@ label {
 
 input,
 textarea {
-  margin-bottom: 20px;
-  padding: 15px;
+  border: 1px solid #f21414;
+  padding: 12px;
   border: none;
   border-radius: 5px;
   outline: none;
   background: #333;
   color: #fff;
+}
+
+#message {
+  margin-bottom: 20px !important;
+
 }
 
 input::placeholder,
@@ -112,6 +117,7 @@ textarea {
 }
 
 button {
+  border: 1px solid #fb0404;
   padding: 10px;
   background-color: #3edc81;
   color: #000;
@@ -132,8 +138,8 @@ button:hover {
 
 .submit-form-btn {
   font-size: 1.2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 600;
+  font-family: Verdana, sans-serif;
+  font-weight: 500;
 }
 
 .navbar-brand {

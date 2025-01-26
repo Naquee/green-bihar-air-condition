@@ -239,13 +239,16 @@ img {
 
 
 .l-p-about-img-cont {
-  width: 400px;
+  width: 250px;
+  max-width: 250px;
 }
 
 .l-p-about-img-cont img {
   border-radius: 0% 100% 0% 100% / 50% 33% 67% 50%;
   background-position: center;
   background-size: cover;
+  /* width: 200px; */
+
 }
 
 .whatsapp-chat-feature {
@@ -372,6 +375,7 @@ img {
   cursor: pointer;
 }
 
+
 @media only screen and (max-width: 1024px) {
   .service-offer-container {
     display: grid;
@@ -390,6 +394,10 @@ img {
   .brand-logo {
     display: grid;
     grid-template-columns: repeat(3, 90px);
+  }
+  
+  #enq-btn-navbar {
+    margin: auto;
   }
 }
 
@@ -443,6 +451,8 @@ img {
   .top-page-wrapper {
     display: none;
   }
+
+  
 }
 
 @media only screen and (min-width: 1424px) {
